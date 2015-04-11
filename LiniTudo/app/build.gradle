@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    repositories { mavenCentral() }
+
+    defaultConfig {
+        applicationId "com.shenkar.mobile.linitudo"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 2
+        versionName "1.2"
+    }
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.google.android.gms:play-services:7.0.0'
+    compile 'com.google.android.gms:play-services-fitness:7.0.0'
+    compile 'com.google.android.gms:play-services-wearable:7.0.0'
+    compile 'com.google.android.gms:play-services-analytics:7.0.0'
+    compile 'com.google.android.gms:play-services-maps:7.0.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+}

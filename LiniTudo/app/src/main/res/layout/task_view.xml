@@ -1,0 +1,46 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/taskTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="23dp"
+        android:layout_toLeftOf="@+id/doneButton"
+        android:layout_alignBottom="@+id/doneButton"
+        android:gravity="center_vertical"
+        android:fontFamily="Arial"
+        android:textColor="#66536b"
+        android:paddingLeft="5pt"
+        android:textIsSelectable="false" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:drawableTop="@drawable/done"
+        android:gravity="center|center_vertical|bottom"
+        android:id="@+id/doneButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onDoneButtonClick"
+        android:textColor="#66536b" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:drawableTop="@drawable/edit"
+        android:gravity="center|center_vertical|bottom"
+        android:id="@+id/editButton"
+        android:onClick="onEditButtonClick"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/doneButton"
+        android:contentDescription=""
+        android:textColor="#66536b" />
+
+</RelativeLayout>
